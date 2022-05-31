@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<title>`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`</title>
+<style type="text/css" media="all">
+body {
+	background-image: linear-gradient(to top, #4B4C70, #8E5890);
+	margin: 0;
+	padding: 0px;
+	max-width: 424px;
+	width: 100%;
+	background-attachment: fixed;
+}
+#body {
+	display: grid;
+	grid-template-rows: auto auto;
+	row-gap: 50px;
+}
+#nav {
+	display: flex;
+	grid-template-columns: auto auto;
+	row-gap: 0;
+	column-gap: 0;
+	float: left;
+	position: fixed;
+}
+#nav > div > a {
+	text-decoration: none;
+	border: ;
+	font-size: 20px;
+	margin-left: 20px;
+}
+#nav > div {
+	padding-top: 5px;
+}
+#menu_bar {
+	background-image: linear-gradient(to right, black, rgba(255,255,255,0));
+	display: none;
+}
+#menu_bar > a {
+	padding-right: 5px;
+	color: #AEAEAE;
+}
+#nav > a {
+	width: 50px;
+}
+#contact > a > img {
+	width: 25px;
+	height: 25px;
+	margin: 30px;
+}
+#about {
+	border: 0px solid;
+	border-bottom-width: 3px;
+	border-bottom-color: black;
+	border-radius: 20px;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 14px;
+}
+#about > h2, #about > p {
+	text-align: center;
+	font-style: Georgia(serif);
+}
+#about > h2 {
+	text-shadow: 2px 2px 6px white;
+}
+#about > p {
+	color: #B9C9C9;
+}
+#content {
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	row-gap: 80px;
+}
+#picture > img {
+	border-radius: 50px;
+	box-shadow: 8px 8px 44px;
+	margin-left: 100px;
+}
+#contact {
+	padding-left: 80px;
+}
+	
+</style>
+</head>
+<body>
+	<div id="body">
+		<div id="nav">
+			<a href="#" id="nav_bar" onclick="navResponse()"><img src="../my icons/menu.png" alt="menu" height="35px" width="35px" /></a>
+			<div id="menu_bar">
+				<a href="#">About</a>
+				<a href="#">Projects</a>
+				<a href="#">Contact</a>
+				<a href="#" id="close" onclick="closeResponse()">x</a>
+			</div>
+		</div>
+		<div id="content">
+			<div id="about">
+				<h2>WELCOME!</h2>
+				<p>
+					My name is
+					Obasiator Valentine,
+					a third year 
+					Electrical and 
+					Electronics 
+					Engineering Student
+					and a tech 
+					enthusiast. I am 
+					very skilled in 
+					front-end web 
+					development, using
+					tools which 
+					includes CSS, HTML,
+					and Javascript to 
+					built excellent and
+					mind blowing sites.
+					</p>
+					
+			</div>
+			<div id="picture">
+				<img src="../DCIM/Camera/obasi_real.jpg" alt="obasiator valentine" width="50%" />
+			</div>
+			<div id="projects">
+				
+			</div>
+			<div id="contact">
+				<a href="#"><img src="../my icons/facebook.png" alt="facebook" /></a>
+				<a href="#"><img src="../my icons/whatsapp.png" alt="whatsapp" /></a>
+				<a href="#"><img src="../my icons/mail.png" alt="email" /></a>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" charset="utf-8">
+	let nav_bar = document.getElementById('nav_bar');
+	let menu_bar = document.getElementById('menu_bar');
+	
+	function navResponse(){
+		menu_bar.style.display = 'flex';
+		document.getElementById('nav_bar').style.display = 'none';
+	}
+	function closeResponse(){
+		menu_bar.style.display = 'none';
+		document.getElementById('nav_bar').style.display = 'flex';
+	}
+</script>
+</html>
